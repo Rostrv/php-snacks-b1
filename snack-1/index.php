@@ -46,6 +46,17 @@ var_dump($partite);
 
 <body>
 
+    <p>
+        <?php
+                for ($i = 0; $i < count($partite); $i++) {
+                    echo $partite[$i]['home']. "-" .$partite[$i]['visitors']." ", "|", " ";
+                    echo $partite[$i]['homepoints']."-";
+                    echo $partite[$i]['visitorspoints']. '<br>';
+                }
+        ?>
+    </p>
+
+
 </body>
 
 </html>
